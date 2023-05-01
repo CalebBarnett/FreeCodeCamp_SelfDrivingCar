@@ -77,8 +77,8 @@ class Car {
         if (this.speed > this.maxSpeed) {
             this.speed = this.maxSpeed;
         }
-        if (this.speed < - this.maxSpeed / 2) {
-            this.speed = - this.maxSpeed / 2;
+        if (this.speed < -this.maxSpeed / 2) {
+            this.speed = -this.maxSpeed / 2;
         }
 
         if (this.speed > 0) {
@@ -109,7 +109,7 @@ class Car {
         if (this.damaged) {
             ctx.fillStyle = "gray";
         } else {
-            ctx.fillStyle = "color";
+            ctx.fillStyle = color;
         }
         ctx.beginPath();
         ctx.moveTo(this.polygon[0].x, this.polygon[0].y);
